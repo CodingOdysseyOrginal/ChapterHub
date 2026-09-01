@@ -10,7 +10,7 @@ type BannerProps = {
 
 export default function Banner({ subtitle, title, imageSrc }: BannerProps) {
   return (
-    <section className="relative h-[450px] w-full overflow-hidden">
+    <section className="relative h-112.5 w-full overflow-hidden">
       <div className="absolute inset-0">
         <div className=" absolute inset-0 bg-blue-500 text-white p-4 text-center">
           <h1 className="text-2xl font-bold">
@@ -25,6 +25,7 @@ export default function Banner({ subtitle, title, imageSrc }: BannerProps) {
               src={imageSrc ? imageSrc : HomePageBanner}
               alt="Book banner"
               fill
+              loading="eager"
             />
           </div>
         </div>
