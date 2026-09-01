@@ -1,5 +1,5 @@
-import Image from "next/image";
 import HomePageBanner from "@/public/HomePage_Banner.jpg";
+import Image, { type StaticImageData } from "next/image";
 
 type BannerProps = {
   // Add any props you want to pass to the Banner component
